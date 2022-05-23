@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="117dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="286dp"
+        android:layout_marginBottom="648dp"
+        android:text="click" />
+
+    <ToggleButton
+        android:id="@+id/btnToggle"
+        android:layout_width="107dp"
+        android:layout_height="37dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="297dp"
+        android:layout_marginBottom="571dp"
+        android:textOff="off"
+        android:textOn="on" />
+
+    <Switch
+        android:id="@+id/btnSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/rdg"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="189dp"
+        android:layout_marginEnd="257dp"
+        android:switchPadding="10dp"
+        android:text="seleccion" />
+
+    <ImageButton
+        android:id="@+id/btnImagen"
+        android:layout_width="74dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="337dp"
+        android:layout_marginBottom="358dp"
+        android:contentDescription="ic_api"
+        android:padding="16dp"
+        android:src="@drawable/ic_api" />
+
+    <LinearLayout
+        android:id="@+id/barraBotones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        style="?android:attr/buttonBarStyle">
+        <Button android:id="@+id/btnAceptar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Aceptar"
+            style="?android:attr/buttonBarButtonStyle" />
+        <Button android:id="@+id/btnCancelar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cancelar"
+            style="?android:attr/buttonBarButtonStyle" />
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/checkbox_meat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnImagen"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="358dp"
+        android:layout_marginBottom="269dp"
+        android:text="meat" />
+
+    <RadioGroup
+        android:id="@+id/rdg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="485dp"
+        android:layout_below="@id/checkbox_meat">
+
+        <RadioButton
+            android:id="@+id/radio_otro"
+            android:layout_width="148dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="231dp"
+            android:text="Otro" />
+
+        <RadioButton
+            android:id="@+id/radio_f"
+            android:layout_width="146dp"
+            android:layout_height="wrap_content"
+            android:text="Femenino" />
+
+        <RadioButton
+            android:id="@+id/radio_m"
+            android:layout_width="146dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="230dp"
+            android:text="Masculino" />
+
+    </RadioGroup>
+
+
+</RelativeLayout>
